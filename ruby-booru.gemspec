@@ -6,18 +6,18 @@ require 'danbooru/version'
 Gem::Specification.new do |spec|
   spec.name          = "ruby-booru"
   spec.version       = Danbooru::VERSION
-  spec.authors       = ["evazion"]
-  spec.email         = ["noizave@gmail.com"]
+  spec.authors       = ["nicentra"]
+  spec.email         = ["nicentra@nicentra.io"]
 
   spec.summary       = "A Ruby interface for the Danbooru API."
-  spec.homepage      = "https://github.com/evazion/ruby-booru.git"
+  spec.homepage      = "https://github.com/nicentra/ruby-booru.git"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
   spec.bindir        = "bin"
-  spec.executables   = %w[danbooru]
+  spec.executables   = %w[booru]
   spec.require_paths = ["lib"]
 
   spec.required_ruby_version = '~> 2.4'
